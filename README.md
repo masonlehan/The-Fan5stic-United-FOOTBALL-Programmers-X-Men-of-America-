@@ -8,16 +8,16 @@ Game Development Official Project Idea
 
 MUST HAVE: 
 [ ] Moving Sprites and Input
-[ ] Collision and physics
-[ ] Audio
-[ ] Jumping
+[Y] Collision and physics
+[Y] Audio
+[Y] Jumping
 [ ] Dashing
 [ ] Ground Pound Bounce
 [ ] Pause
 [ ] Close the game
 [ ] Time Limit
 [ ] UI
-[ ] Item Collecting
+[Y] Item Collecting
 [ ] Side-Scrolling Camera
 
 STRETCH:
