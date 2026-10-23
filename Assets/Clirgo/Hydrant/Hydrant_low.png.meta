@@ -1,0 +1,2730 @@
+fileFormatVersion: 2
+guid: 54cb5447288d242d7bad560f6444c5d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4920338561286810367
+    second: Hydrant_low_0
+  - first:
+      213: -6618426422970347719
+    second: Hydrant_low_1
+  - first:
+      213: -9214321074845593046
+    second: Hydrant_low_2
+  - first:
+      213: -2723233891841117519
+    second: Hydrant_low_3
+  - first:
+      213: 5703814854367463990
+    second: Hydrant_low_4
+  - first:
+      213: -2272266370569671199
+    second: Hydrant_low_5
+  - first:
+      213: 7084957515188126062
+    second: Hydrant_low_6
+  - first:
+      213: 1626174239475255111
+    second: Hydrant_low_7
+  - first:
+      213: -3190724633972954738
+    second: Hydrant_low_8
+  - first:
+      213: -2473035605698193030
+    second: Hydrant_low_9
+  - first:
+      213: -3521229910801477164
+    second: Hydrant_low_10
+  - first:
+      213: 4800379077540697902
+    second: Hydrant_low_11
+  - first:
+      213: -7237560966873184134
+    second: Hydrant_low_12
+  - first:
+      213: 5103984298884573120
+    second: Hydrant_low_13
+  - first:
+      213: 1620721483840143724
+    second: Hydrant_low_14
+  - first:
+      213: -4701198045624023222
+    second: Hydrant_low_15
+  - first:
+      213: -1577766639170971823
+    second: Hydrant_low_16
+  - first:
+      213: 6857555257760593312
+    second: Hydrant_low_17
+  - first:
+      213: 1378877169415172586
+    second: Hydrant_low_18
+  - first:
+      213: 3080559472220272099
+    second: Hydrant_low_19
+  - first:
+      213: -5845993619576734739
+    second: Hydrant_low_20
+  - first:
+      213: -2315862438053829434
+    second: Hydrant_low_21
+  - first:
+      213: -8435355389457426898
+    second: Hydrant_low_22
+  - first:
+      213: -407890817519883730
+    second: Hydrant_low_23
+  - first:
+      213: -6673337058084185822
+    second: Hydrant_low_24
+  - first:
+      213: 4328692824209703000
+    second: Hydrant_low_25
+  - first:
+      213: 8265437611485187451
+    second: Hydrant_low_26
+  - first:
+      213: -364571608905566136
+    second: Hydrant_low_27
+  - first:
+      213: -2370258377651020974
+    second: Hydrant_low_28
+  - first:
+      213: -3993844874855568561
+    second: Hydrant_low_29
+  - first:
+      213: 2846353459900059922
+    second: Hydrant_low_30
+  - first:
+      213: 5187770306805439537
+    second: Hydrant_low_31
+  - first:
+      213: -943274866840585781
+    second: Hydrant_low_32
+  - first:
+      213: 2964592276464845136
+    second: Hydrant_low_33
+  - first:
+      213: -2793844714804256958
+    second: Hydrant_low_34
+  - first:
+      213: -2358325604464041370
+    second: Hydrant_low_35
+  - first:
+      213: 8370062413892762352
+    second: Hydrant_low_36
+  - first:
+      213: -6433456919843992750
+    second: Hydrant_low_37
+  - first:
+      213: 2476250269694069715
+    second: Hydrant_low_38
+  - first:
+      213: -3047720339804042575
+    second: Hydrant_low_39
+  - first:
+      213: -8291720492764062989
+    second: Hydrant_low_40
+  - first:
+      213: 4244662622563820157
+    second: Hydrant_low_41
+  - first:
+      213: 3826084923473032994
+    second: Hydrant_low_42
+  - first:
+      213: -3043166739046594697
+    second: Hydrant_low_43
+  - first:
+      213: -8195598109847627875
+    second: Hydrant_low_44
+  - first:
+      213: 7484038068989588254
+    second: Hydrant_low_45
+  - first:
+      213: -6171420851689280490
+    second: Hydrant_low_46
+  - first:
+      213: -6024825204704780748
+    second: Hydrant_low_47
+  - first:
+      213: -5759122172248976642
+    second: Hydrant_low_48
+  - first:
+      213: 3902202856443392754
+    second: Hydrant_low_49
+  - first:
+      213: 7476736900657576847
+    second: Hydrant_low_50
+  - first:
+      213: -3847964004879108070
+    second: Hydrant_low_51
+  - first:
+      213: 4143067924400374436
+    second: Hydrant_low_52
+  - first:
+      213: 7123489937759346656
+    second: Hydrant_low_53
+  - first:
+      213: 1962700715659308565
+    second: Hydrant_low_54
+  - first:
+      213: -2479527888611638063
+    second: Hydrant_low_55
+  - first:
+      213: 1343387969536720815
+    second: Hydrant_low_56
+  - first:
+      213: 2015879193730947335
+    second: Hydrant_low_57
+  - first:
+      213: 5873210833215010799
+    second: Hydrant_low_58
+  - first:
+      213: 6708442904058301154
+    second: Hydrant_low_59
+  - first:
+      213: -3840304568601090735
+    second: Hydrant_low_60
+  - first:
+      213: -5071950297848522283
+    second: Hydrant_low_61
+  - first:
+      213: 3396057290067413429
+    second: Hydrant_low_62
+  - first:
+      213: -266493366199469933
+    second: Hydrant_low_63
+  - first:
+      213: -8247011849295479437
+    second: Hydrant_low_64
+  - first:
+      213: 8573101406721348087
+    second: Hydrant_low_65
+  - first:
+      213: -5608882543264864615
+    second: Hydrant_low_66
+  - first:
+      213: 4726760157813115759
+    second: Hydrant_low_67
+  - first:
+      213: -4985495741148134933
+    second: Hydrant_low_68
+  - first:
+      213: -5933642448283644364
+    second: Hydrant_low_69
+  - first:
+      213: 319896164975124138
+    second: Hydrant_low_70
+  - first:
+      213: -3048948017723736353
+    second: Hydrant_low_71
+  - first:
+      213: 6732684267913875403
+    second: Hydrant_low_72
+  - first:
+      213: -6827775746663943639
+    second: Hydrant_low_73
+  - first:
+      213: -3022657589290969827
+    second: Hydrant_low_74
+  - first:
+      213: -3075742081554960978
+    second: Hydrant_low_75
+  - first:
+      213: 2200651310966620410
+    second: Hydrant_low_76
+  - first:
+      213: -6675827517222971039
+    second: Hydrant_low_77
+  - first:
+      213: 26316598817089872
+    second: Hydrant_low_78
+  - first:
+      213: -9123779033186088426
+    second: Hydrant_low_79
+  - first:
+      213: 866229661575493591
+    second: Hydrant_low_80
+  - first:
+      213: 1132049371931575483
+    second: Hydrant_low_81
+  - first:
+      213: -7983312136720882035
+    second: Hydrant_low_82
+  - first:
+      213: 587718880932030027
+    second: Hydrant_low_83
+  - first:
+      213: 4758090023888923411
+    second: Hydrant_low_84
+  - first:
+      213: 3908329341900473151
+    second: Hydrant_low_85
+  - first:
+      213: -3083783567091665987
+    second: Hydrant_low_86
+  - first:
+      213: -3563093244635421119
+    second: Hydrant_low_87
+  - first:
+      213: -3640160309617423194
+    second: Hydrant_low_88
+  - first:
+      213: -3069480099824276972
+    second: Hydrant_low_89
+  - first:
+      213: -955689931308186043
+    second: Hydrant_low_90
+  - first:
+      213: -361960596532900674
+    second: Hydrant_low_91
+  - first:
+      213: 5930552295725525324
+    second: Hydrant_low_92
+  - first:
+      213: 3205563116507228742
+    second: Hydrant_low_93
+  - first:
+      213: 6243239681050850439
+    second: Hydrant_low_94
+  - first:
+      213: -3824956657368562171
+    second: Hydrant_low_95
+  - first:
+      213: 4743116378615094143
+    second: Hydrant_low_96
+  - first:
+      213: -1859131861157524015
+    second: Hydrant_low_97
+  - first:
+      213: 7711298144772378913
+    second: Hydrant_low_98
+  - first:
+      213: -9175420087833864237
+    second: Hydrant_low_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hydrant_low_0
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 3937
+        width: 91
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa28283add884440800000000000000
+      internalID: 4920338561286810367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_1
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3889
+        width: 102
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93f0bc6fb30a624a0800000000000000
+      internalID: -6618426422970347719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_2
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 3822
+        width: 61
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a22de6f4dc7202080800000000000000
+      internalID: -9214321074845593046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_3
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 3822
+        width: 61
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b271842431253ad0800000000000000
+      internalID: -2723233891841117519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_4
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 3938
+        width: 90
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a4b23d365082f40800000000000000
+      internalID: 5703814854367463990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_5
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 3875
+        width: 101
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ede02366c94770e0800000000000000
+      internalID: -2272266370569671199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_6
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3864
+        width: 102
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61c5858253d25260800000000000000
+      internalID: 7084957515188126062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_7
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 3827
+        width: 60
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74740dedad4519610800000000000000
+      internalID: 1626174239475255111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_8
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 3935
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8924ffb9d448b3d0800000000000000
+      internalID: -3190724633972954738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_9
+      rect:
+        serializedVersion: 2
+        x: 3581
+        y: 3929
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79577528330eadd0800000000000000
+      internalID: -2473035605698193030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_10
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3688
+        width: 191
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1923a6d04122fc0800000000000000
+      internalID: -3521229910801477164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_11
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3681
+        width: 79
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27d708665f5e9240800000000000000
+      internalID: 4800379077540697902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_12
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 3822
+        width: 101
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a788a4995a40f8b90800000000000000
+      internalID: -7237560966873184134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_13
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 3694
+        width: 60
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7af228daef4d640800000000000000
+      internalID: 5103984298884573120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_14
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 3750
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61c2244a95fd7610800000000000000
+      internalID: 1620721483840143724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_15
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 3785
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47c1d7194df1ceb0800000000000000
+      internalID: -4701198045624023222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_16
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 3785
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15790cdd995aa1ae0800000000000000
+      internalID: -1577766639170971823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_17
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 3654
+        width: 191
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a5be6e8c2eea2f50800000000000000
+      internalID: 6857555257760593312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_18
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 3716
+        width: 79
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae133efda71c22310800000000000000
+      internalID: 1378877169415172586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_19
+      rect:
+        serializedVersion: 2
+        x: 3581
+        y: 3716
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5772bb48850ca20800000000000000
+      internalID: 3080559472220272099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_20
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 3716
+        width: 80
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debbde1c6cbdedea0800000000000000
+      internalID: -5845993619576734739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_21
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3601
+        width: 191
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4a12fe1676cdfd0800000000000000
+      internalID: -2315862438053829434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_22
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 3380
+        width: 148
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26963937f89fea80800000000000000
+      internalID: -8435355389457426898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_23
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 3380
+        width: 148
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a659a6671e65af0800000000000000
+      internalID: -407890817519883730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_24
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 3380
+        width: 53
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22911727d4b8363a0800000000000000
+      internalID: -6673337058084185822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_25
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 3399
+        width: 152
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8504dc0703b921c30800000000000000
+      internalID: 4328692824209703000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_26
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 3434
+        width: 151
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d4ab927bbb4b270800000000000000
+      internalID: 8265437611485187451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_27
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 3434
+        width: 152
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848bdf3ad08c0faf0800000000000000
+      internalID: -364571608905566136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_28
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 3525
+        width: 151
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b973e40962b1fd0800000000000000
+      internalID: -2370258377651020974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_29
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3513
+        width: 152
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b28322f330398c0800000000000000
+      internalID: -3993844874855568561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_30
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 3513
+        width: 53
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2111c822467408720800000000000000
+      internalID: 2846353459900059922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_31
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 3127
+        width: 91
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c1579ab99aef740800000000000000
+      internalID: 5187770306805439537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_32
+      rect:
+        serializedVersion: 2
+        x: 3581
+        y: 3127
+        width: 91
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc9b96c9180d8e2f0800000000000000
+      internalID: -943274866840585781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_33
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 3416
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051cd86e7f8542920800000000000000
+      internalID: 2964592276464845136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_34
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3392
+        width: 207
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f5d78c8054a39d0800000000000000
+      internalID: -2793844714804256958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_35
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3392
+        width: 84
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66266319b5b854fd0800000000000000
+      internalID: -2358325604464041370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_36
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3273
+        width: 232
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa3def3b6f682470800000000000000
+      internalID: 8370062413892762352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_37
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 3186
+        width: 249
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25b8bee6405c7b6a0800000000000000
+      internalID: -6433456919843992750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_38
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 3186
+        width: 233
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db841420886d5220800000000000000
+      internalID: 2476250269694069715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_39
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 3213
+        width: 148
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba4f3b9f7254b5d0800000000000000
+      internalID: -3047720339804042575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_40
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 3416
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa98fba424edec80800000000000000
+      internalID: -8291720492764062989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_41
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 3020
+        width: 282
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d726b418a2218ea30800000000000000
+      internalID: 4244662622563820157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_42
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 2548
+        width: 158
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227761867fbf81530800000000000000
+      internalID: 3826084923473032994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_43
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2909
+        width: 254
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77708d669ff74c5d0800000000000000
+      internalID: -3043166739046594697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_44
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2909
+        width: 254
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d975ba4f0f2634e80800000000000000
+      internalID: -8195598109847627875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_45
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 2903
+        width: 186
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e13ff9bb8f4acd760800000000000000
+      internalID: 7484038068989588254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_46
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2963
+        width: 253
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61c2f97de65ba5aa0800000000000000
+      internalID: -6171420851689280490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_47
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 2963
+        width: 53
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e50cfa565836ca0800000000000000
+      internalID: -6024825204704780748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_48
+      rect:
+        serializedVersion: 2
+        x: 3762
+        y: 3127
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef21601c5ec7310b0800000000000000
+      internalID: -5759122172248976642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_49
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 3127
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2b2dbb2d8672630800000000000000
+      internalID: 3902202856443392754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_50
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2548
+        width: 382
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bffb20994b2c760800000000000000
+      internalID: 7476736900657576847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_51
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2177
+        width: 642
+        height: 643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18f0bcff19499ac0800000000000000
+      internalID: -3847964004879108070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_52
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 2177
+        width: 158
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2033a83522f7930800000000000000
+      internalID: 4143067924400374436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_53
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 2491
+        width: 382
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef17354b58bbd260800000000000000
+      internalID: 7123489937759346656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_54
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 2487
+        width: 301
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e274de6e9ec3b10800000000000000
+      internalID: 1962700715659308565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_55
+      rect:
+        serializedVersion: 2
+        x: 2762
+        y: 2487
+        width: 301
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d401acb582f69dd0800000000000000
+      internalID: -2479527888611638063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_56
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 2487
+        width: 157
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faff4cf9d3ca4a210800000000000000
+      internalID: 1343387969536720815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_57
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 2487
+        width: 122
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7091f643277d9fb10800000000000000
+      internalID: 2015879193730947335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_58
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 2487
+        width: 91
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7b1cc9226d18150800000000000000
+      internalID: 5873210833215010799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_59
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 2776
+        width: 53
+        height: 224
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea8264474d291d50800000000000000
+      internalID: 6708442904058301154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_60
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 2776
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 155e837775f74bac0800000000000000
+      internalID: -3840304568601090735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_61
+      rect:
+        serializedVersion: 2
+        x: 3793
+        y: 2487
+        width: 85
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d95d429310dc99b0800000000000000
+      internalID: -5071950297848522283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_62
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1751
+        width: 707
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9085bbc18312f20800000000000000
+      internalID: 3396057290067413429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_63
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1268
+        width: 419
+        height: 1134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398bea402b93d4cf0800000000000000
+      internalID: -266493366199469933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_64
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1878
+        width: 520
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37d3e48ea6abc8d80800000000000000
+      internalID: -8247011849295479437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_65
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 2017
+        width: 254
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f11703ae46c9f670800000000000000
+      internalID: 8573101406721348087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_66
+      rect:
+        serializedVersion: 2
+        x: 3325
+        y: 1848
+        width: 123
+        height: 550
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996eec54b0f3922b0800000000000000
+      internalID: -5608882543264864615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_67
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 1848
+        width: 123
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b8be0f153d89140800000000000000
+      internalID: 4726760157813115759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_68
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2199
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be184a7a906ffcab0800000000000000
+      internalID: -4985495741148134933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_69
+      rect:
+        serializedVersion: 2
+        x: 3960
+        y: 2199
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ecfdd81a777ada0800000000000000
+      internalID: -5933642448283644364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_70
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 954
+        width: 420
+        height: 1134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae1a5efddf707400800000000000000
+      internalID: 319896164975124138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_71
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 954
+        width: 420
+        height: 1134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdef1f09ee5ffa5d0800000000000000
+      internalID: -3048948017723736353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_72
+      rect:
+        serializedVersion: 2
+        x: 2981
+        y: 1268
+        width: 158
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf0edd9bac4f6d50800000000000000
+      internalID: 6732684267913875403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_73
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1848
+        width: 125
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 922711e222ede31a0800000000000000
+      internalID: -6827775746663943639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_74
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 954
+        width: 707
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d155ca0ffec5d06d0800000000000000
+      internalID: -3022657589290969827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_75
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1268
+        width: 520
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead22307fd4c055d0800000000000000
+      internalID: -3075742081554960978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_76
+      rect:
+        serializedVersion: 2
+        x: 3228
+        y: 1268
+        width: 186
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0c9a035b84a8e10800000000000000
+      internalID: 2200651310966620410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_77
+      rect:
+        serializedVersion: 2
+        x: 3537
+        y: 1258
+        width: 92
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169952e3e32ba53a0800000000000000
+      internalID: -6675827517222971039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_78
+      rect:
+        serializedVersion: 2
+        x: 3718
+        y: 1609
+        width: 123
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0596034aece7d5000800000000000000
+      internalID: 26316598817089872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_79
+      rect:
+        serializedVersion: 2
+        x: 3933
+        y: 1502
+        width: 60
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a49c52f43d16180800000000000000
+      internalID: -9123779033186088426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_80
+      rect:
+        serializedVersion: 2
+        x: 3718
+        y: 1259
+        width: 125
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d73d18a947750c00800000000000000
+      internalID: 866229661575493591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_81
+      rect:
+        serializedVersion: 2
+        x: 3933
+        y: 1258
+        width: 60
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb48f2ae7e8d5bf00800000000000000
+      internalID: 1132049371931575483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_82
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 45
+        width: 419
+        height: 1134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86efa7b8e3953190800000000000000
+      internalID: -7983312136720882035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_83
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 743
+        width: 387
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b466eb5553ff72800800000000000000
+      internalID: 587718880932030027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_84
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 743
+        width: 361
+        height: 361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31baa33daa1280240800000000000000
+      internalID: 4758090023888923411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_85
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 743
+        width: 186
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33c63944dc2d3630800000000000000
+      internalID: 3908329341900473151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_86
+      rect:
+        serializedVersion: 2
+        x: 3574
+        y: 743
+        width: 148
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db3705f2f233435d0800000000000000
+      internalID: -3083783567091665987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_87
+      rect:
+        serializedVersion: 2
+        x: 3812
+        y: 1000
+        width: 100
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14669e372995d8ec0800000000000000
+      internalID: -3563093244635421119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_88
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 45
+        width: 819
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ac07cb1c7d8b7dc0800000000000000
+      internalID: -3640160309617423194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_89
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 45
+        width: 819
+        height: 820
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41ae7dcac140765d0800000000000000
+      internalID: -3069480099824276972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_90
+      rect:
+        serializedVersion: 2
+        x: 3812
+        y: 743
+        width: 79
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54645f82215bcb2f0800000000000000
+      internalID: -955689931308186043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_91
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 45
+        width: 301
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcc7f451ce0afaf0800000000000000
+      internalID: -361960596532900674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_92
+      rect:
+        serializedVersion: 2
+        x: 2763
+        y: 45
+        width: 301
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c49e89c34ed8d4250800000000000000
+      internalID: 5930552295725525324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_93
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 549
+        width: 101
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ae180bba27c7c20800000000000000
+      internalID: 3205563116507228742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_94
+      rect:
+        serializedVersion: 2
+        x: 3428
+        y: 45
+        width: 123
+        height: 549
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784b8ac696174a650800000000000000
+      internalID: 6243239681050850439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_95
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 396
+        width: 191
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50608448f260beac0800000000000000
+      internalID: -3824956657368562171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_96
+      rect:
+        serializedVersion: 2
+        x: 3921
+        y: 396
+        width: 60
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b90bb573fe2d140800000000000000
+      internalID: 4743116378615094143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_97
+      rect:
+        serializedVersion: 2
+        x: 3153
+        y: 45
+        width: 186
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd48112c690336e0800000000000000
+      internalID: -1859131861157524015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_98
+      rect:
+        serializedVersion: 2
+        x: 3641
+        y: 46
+        width: 152
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12159447ec8040b60800000000000000
+      internalID: 7711298144772378913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hydrant_low_99
+      rect:
+        serializedVersion: 2
+        x: 3882
+        y: 45
+        width: 60
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7dda72b0c5aa080800000000000000
+      internalID: -9175420087833864237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hydrant_low_0: 4920338561286810367
+      Hydrant_low_1: -6618426422970347719
+      Hydrant_low_10: -3521229910801477164
+      Hydrant_low_11: 4800379077540697902
+      Hydrant_low_12: -7237560966873184134
+      Hydrant_low_13: 5103984298884573120
+      Hydrant_low_14: 1620721483840143724
+      Hydrant_low_15: -4701198045624023222
+      Hydrant_low_16: -1577766639170971823
+      Hydrant_low_17: 6857555257760593312
+      Hydrant_low_18: 1378877169415172586
+      Hydrant_low_19: 3080559472220272099
+      Hydrant_low_2: -9214321074845593046
+      Hydrant_low_20: -5845993619576734739
+      Hydrant_low_21: -2315862438053829434
+      Hydrant_low_22: -8435355389457426898
+      Hydrant_low_23: -407890817519883730
+      Hydrant_low_24: -6673337058084185822
+      Hydrant_low_25: 4328692824209703000
+      Hydrant_low_26: 8265437611485187451
+      Hydrant_low_27: -364571608905566136
+      Hydrant_low_28: -2370258377651020974
+      Hydrant_low_29: -3993844874855568561
+      Hydrant_low_3: -2723233891841117519
+      Hydrant_low_30: 2846353459900059922
+      Hydrant_low_31: 5187770306805439537
+      Hydrant_low_32: -943274866840585781
+      Hydrant_low_33: 2964592276464845136
+      Hydrant_low_34: -2793844714804256958
+      Hydrant_low_35: -2358325604464041370
+      Hydrant_low_36: 8370062413892762352
+      Hydrant_low_37: -6433456919843992750
+      Hydrant_low_38: 2476250269694069715
+      Hydrant_low_39: -3047720339804042575
+      Hydrant_low_4: 5703814854367463990
+      Hydrant_low_40: -8291720492764062989
+      Hydrant_low_41: 4244662622563820157
+      Hydrant_low_42: 3826084923473032994
+      Hydrant_low_43: -3043166739046594697
+      Hydrant_low_44: -8195598109847627875
+      Hydrant_low_45: 7484038068989588254
+      Hydrant_low_46: -6171420851689280490
+      Hydrant_low_47: -6024825204704780748
+      Hydrant_low_48: -5759122172248976642
+      Hydrant_low_49: 3902202856443392754
+      Hydrant_low_5: -2272266370569671199
+      Hydrant_low_50: 7476736900657576847
+      Hydrant_low_51: -3847964004879108070
+      Hydrant_low_52: 4143067924400374436
+      Hydrant_low_53: 7123489937759346656
+      Hydrant_low_54: 1962700715659308565
+      Hydrant_low_55: -2479527888611638063
+      Hydrant_low_56: 1343387969536720815
+      Hydrant_low_57: 2015879193730947335
+      Hydrant_low_58: 5873210833215010799
+      Hydrant_low_59: 6708442904058301154
+      Hydrant_low_6: 7084957515188126062
+      Hydrant_low_60: -3840304568601090735
+      Hydrant_low_61: -5071950297848522283
+      Hydrant_low_62: 3396057290067413429
+      Hydrant_low_63: -266493366199469933
+      Hydrant_low_64: -8247011849295479437
+      Hydrant_low_65: 8573101406721348087
+      Hydrant_low_66: -5608882543264864615
+      Hydrant_low_67: 4726760157813115759
+      Hydrant_low_68: -4985495741148134933
+      Hydrant_low_69: -5933642448283644364
+      Hydrant_low_7: 1626174239475255111
+      Hydrant_low_70: 319896164975124138
+      Hydrant_low_71: -3048948017723736353
+      Hydrant_low_72: 6732684267913875403
+      Hydrant_low_73: -6827775746663943639
+      Hydrant_low_74: -3022657589290969827
+      Hydrant_low_75: -3075742081554960978
+      Hydrant_low_76: 2200651310966620410
+      Hydrant_low_77: -6675827517222971039
+      Hydrant_low_78: 26316598817089872
+      Hydrant_low_79: -9123779033186088426
+      Hydrant_low_8: -3190724633972954738
+      Hydrant_low_80: 866229661575493591
+      Hydrant_low_81: 1132049371931575483
+      Hydrant_low_82: -7983312136720882035
+      Hydrant_low_83: 587718880932030027
+      Hydrant_low_84: 4758090023888923411
+      Hydrant_low_85: 3908329341900473151
+      Hydrant_low_86: -3083783567091665987
+      Hydrant_low_87: -3563093244635421119
+      Hydrant_low_88: -3640160309617423194
+      Hydrant_low_89: -3069480099824276972
+      Hydrant_low_9: -2473035605698193030
+      Hydrant_low_90: -955689931308186043
+      Hydrant_low_91: -361960596532900674
+      Hydrant_low_92: 5930552295725525324
+      Hydrant_low_93: 3205563116507228742
+      Hydrant_low_94: 6243239681050850439
+      Hydrant_low_95: -3824956657368562171
+      Hydrant_low_96: 4743116378615094143
+      Hydrant_low_97: -1859131861157524015
+      Hydrant_low_98: 7711298144772378913
+      Hydrant_low_99: -9175420087833864237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

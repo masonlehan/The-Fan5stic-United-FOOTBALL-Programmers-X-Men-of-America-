@@ -1,0 +1,13 @@
+# Blender 4.4.0 MTL File: 'Hydrant.blend'
+# www.blender.org
+
+newmtl Material.001
+Ns 0.000000
+Ka 0.275229 0.275229 0.275229
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd C:/Users/digdu/Documents/Blender/Textures/Hydrant_low.png
+map_Bump -bm 0.500000 C:/Users/digdu/Documents/Blender/Textures/Hydrant_norm.png

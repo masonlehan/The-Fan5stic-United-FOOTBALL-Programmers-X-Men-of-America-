@@ -1,67 +1,92 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.InputSystem; 
 
 public class PlayerScript : MonoBehaviour
 {
+    Rigidbody2D rb;
+    Vector2 direction;
+    bool onGround;
 
-Rigidbody2D rb;
+    [Header("Movement Settings")]
+    public float Speed;
+    public float JumpForce;
+    public float SuitcaseJumpForce = 16f; // Extra high boost for jumping off the suitcase!
 
-Vector2 direction;
+    [Header("Suitcase Settings")]
+    public Transform suitcaseTransform; // Drag your BCase object here in the inspector
+    private bool canSuitcaseDoubleJump = true;
 
-public float Speed;
-
-public float JumpForce;
-bool onGround;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-     rb = GetComponent<Rigidbody2D>();
+       rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Keeps your exact movement running smoothly
         rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
     }
 
-void OnMove(InputValue movement)
-{
-direction = movement.Get<Vector2>();
-}
-
-void OnJump()
-{
-    if(onGround == true)
-    {
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+    // Handles your controller/keyboard stick movement
+    void OnMove(InputValue movement) 
+    { 
+        direction = movement.Get<Vector2>();
     }
-}
 
-
-void OnCollisionEnter2D(Collision2D collision)
-{
-    // Access the GameObject the collider is attached to.
-    GameObject go = collision.gameObject;
-
-    // Does the GameObject we collided with have the tag "Ground"?
-    if (go.tag == "Ground")
+    // Handles jumping using your Input System action
+    void OnJump()
     {
-        // Yes, we are on the ground.
-        onGround = true;
+        if (onGround == true)
+        {
+            // Normal Jump
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+        }
+        else if (canSuitcaseDoubleJump == true)
+        {
+            // Suitcase Double Jump Power!
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, SuitcaseJumpForce);
+            canSuitcaseDoubleJump = false;
+            Debug.Log("Suitcase Double Jump Activated!");
+        }
     }
-}
 
-void OnCollisionExit2D(Collision2D collision)
-{
-    // Access the GameObject the collider is attached to.
-    GameObject go = collision.gameObject;
-
-    // Does the GameObject we collided with have the tag "Ground"?
-    if (go.tag == "Ground")
+    // Left-click or attack button triggers this automatically in the New Input System
+    void OnFire()
     {
-        // Yes, we were on the ground.
-        onGround = false;
+        SwingSuitcase();
     }
-}
+
+    void SwingSuitcase()
+    {
+        if (suitcaseTransform != null)
+        {
+            suitcaseTransform.localRotation = Quaternion.Euler(0, 0, -45f);
+            Invoke("ResetSuitcaseRotation", 0.15f);
+        }
+    }
+
+    void ResetSuitcaseRotation()
+    {
+        if (suitcaseTransform != null) 
+        {
+            suitcaseTransform.localRotation = Quaternion.identity;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            onGround = true;
+            canSuitcaseDoubleJump = true; // Resets your double jump whenever you touch down
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ground")
+        {
+            onGround = false;
+        }
+    }
 }
