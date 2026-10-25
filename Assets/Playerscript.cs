@@ -20,6 +20,12 @@ public class PlayerScript : MonoBehaviour
     private float dashTimer = 0f;
     private float facingDirection = 1f;
     private bool canDash = true;
+    private bool dashJumpMomentum = false;
+
+    [Header("Dash Jump Settings")]
+    public float DashJumpAcceleration = 20f;
+    public float DashJumpDeceleration = 30f;
+    public float DashJumpMaxSpeed = 20f;
 
     [Header ("Bounce Settings")]
 
@@ -34,40 +40,58 @@ public class PlayerScript : MonoBehaviour
        rb = GetComponent<Rigidbody2D>();
     }
 
+    
+    
     void Update()
     {
-        // I'm in hell (Dashing) - Bill
-        if (direction.x > 0)
+        if (direction.x != 0 && !dashJumpMomentum)
         {
-            facingDirection = 1f;
-        }
-        else if (direction.x < 0)
-        {
-            facingDirection = -1f;
+            facingDirection = Mathf.Sign(direction.x);
         }
 
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
-
+            
             if (dashTimer <= 0f)
             {
                 isDashing = false;
-                
-                
+
                 if (dashTrail != null)
                 {
                     dashTrail.emitting = false;
                 }
             }
         }
+        else if (dashJumpMomentum)
+        {
+            // Accelerate or decelerate based on player input
+            float input = direction.x;
+            if (input != 0 && Mathf.Sign(input) != Mathf.Sign(rb.linearVelocity.x))
+            {
+                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x,0f,DashJumpDeceleration * Time.deltaTime),rb.linearVelocity.y);
+                
+                if (Mathf.Abs(rb.linearVelocity.x) < 0.1f)
+                {
+                    rb.linearVelocity = new Vector2(0f,rb.linearVelocity.y);
+                }
+            }
+            
+            else if (input != 0)
+            {
+                // Forward input maintains or builds momentum
+                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x,input * DashJumpMaxSpeed, DashJumpAcceleration * Time.deltaTime), rb.linearVelocity.y);
+            }
+        }   
+    
         else
         {
-            // Keeps your exact movement running smoothly (Is this ai? - Bill)
-            // moved this here because I felt like it (I had to to get dashing working lmao) - Billy <3 
+            // Normal movement
             rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
         }
     }
+
+
 
     void FixedUpdate()
     {
@@ -82,23 +106,44 @@ public class PlayerScript : MonoBehaviour
     { 
         direction = movement.Get<Vector2>();
     }
-
+    
     // Handles jumping using your Input System action
+    
     void OnJump()
     {
-        if (onGround == true)
+        if (isDashing && onGround)
         {
-            // Normal Jump
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+            isDashing = false;
+            
+            if (dashTrail != null)
+            {
+                dashTrail.emitting = false;
+            }
+            
+            dashJumpMomentum = true;
+            
+            // Jump without losing horizontal speed
+            // moved this here because I felt like it (I needed to lol) - Bill
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
+            onGround = false;
+            canSuitcaseDoubleJump = true;
+            return;
         }
-        else if (canSuitcaseDoubleJump == true)
+        if (isDashing) return;
+        
+        if (onGround)
         {
-            // Suitcase Double Jump Power!
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, SuitcaseJumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
+        }
+        
+        else if (canSuitcaseDoubleJump)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,SuitcaseJumpForce);
             canSuitcaseDoubleJump = false;
             Debug.Log("Suitcase Double Jump Activated!");
         }
     }
+
 
     // LEFT SHIFT DASH DASH DASH AWAY HO HO HO - Bill
     void OnDash()
@@ -159,6 +204,7 @@ public class PlayerScript : MonoBehaviour
             onGround = true;
             canSuitcaseDoubleJump = true;
             canDash = true;
+            dashJumpMomentum = false;
         }
     }
 
