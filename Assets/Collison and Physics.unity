@@ -1116,8 +1116,11 @@ MonoBehaviour:
   JumpForce: 8.5
   SuitcaseJumpForce: 0
   DashSpeed: 20
-  DashDuration: 0.15
+  DashDuration: 0.2
   dashTrail: {fileID: 677254505}
+  DashJumpAcceleration: 15
+  DashJumpDeceleration: 70
+  DashJumpMaxSpeed: 15
   suitcaseTransform: {fileID: 0}
 --- !u!114 &677254504
 MonoBehaviour:
