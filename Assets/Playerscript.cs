@@ -26,8 +26,18 @@ public class PlayerScript : MonoBehaviour
     public float DashJumpAcceleration = 20f;
     public float DashJumpDeceleration = 30f;
     public float DashJumpMaxSpeed = 20f;
+    
 
     [Header ("Bounce Settings")]
+    public float SlamSpeed = 25f;
+    public float BounceHeight = 22f;
+    public float SlamDeceleration = 2f;
+    [Range(0f, 1f)]
+    public float BounceDeceleration = 0.2f;
+    public TrailRenderer slamTrail;
+
+    private bool isSlamming = false;
+    private bool canSlam = true;
 
     [Header("Suitcase Settings")]
     public Transform suitcaseTransform; // Drag your BCase object here in the inspector
@@ -63,13 +73,18 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         }
+        else if (isSlamming)
+        {
+            float newX = Mathf.MoveTowards(rb.linearVelocity.x, 0f, SlamDeceleration * Time.deltaTime);
+            rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
+        }
+        
         else if (dashJumpMomentum)
         {
-            // Accelerate or decelerate based on player input
             float input = direction.x;
             if (input != 0 && Mathf.Sign(input) != Mathf.Sign(rb.linearVelocity.x))
             {
-                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x,0f,DashJumpDeceleration * Time.deltaTime),rb.linearVelocity.y);
+                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x, 0f, DashJumpDeceleration * Time.deltaTime),rb.linearVelocity.y);
                 
                 if (Mathf.Abs(rb.linearVelocity.x) < 0.1f)
                 {
@@ -79,14 +94,12 @@ public class PlayerScript : MonoBehaviour
             
             else if (input != 0)
             {
-                // Forward input maintains or builds momentum
                 rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x,input * DashJumpMaxSpeed, DashJumpAcceleration * Time.deltaTime), rb.linearVelocity.y);
             }
         }   
     
         else
         {
-            // Normal movement
             rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
         }
     }
@@ -99,15 +112,19 @@ public class PlayerScript : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(facingDirection * DashSpeed, 0f);
         }
+        
+        if (isSlamming)
+        {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x,-SlamSpeed);
+        }
     }
 
-    // Handles your controller/keyboard stick movement
+
     void OnMove(InputValue movement) 
     { 
         direction = movement.Get<Vector2>();
     }
     
-    // Handles jumping using your Input System action
     
     void OnJump()
     {
@@ -122,8 +139,6 @@ public class PlayerScript : MonoBehaviour
             
             dashJumpMomentum = true;
             
-            // Jump without losing horizontal speed
-            // moved this here because I felt like it (I needed to lol) - Bill
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
             onGround = false;
             canSuitcaseDoubleJump = true;
@@ -173,6 +188,27 @@ public class PlayerScript : MonoBehaviour
             dashTrail.emitting = true;
         }
     }
+    
+    //I'M NOT MAKING A BOUNCE JOKE... DOWN KEY TO BOUNCE - Bill
+    void OnBounce()
+    {
+        if (onGround || isSlamming || !canSlam) return;
+        isDashing = false;
+
+        if (dashTrail != null) dashTrail.emitting = false;
+    
+        dashJumpMomentum = false;
+        isSlamming = true;
+        canSlam = false;
+
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x,-SlamSpeed);
+
+        if (slamTrail != null)
+        {
+            slamTrail.Clear();
+            slamTrail.emitting = true;
+        }
+    }
 
     // Left-click or attack button triggers this automatically in the New Input System
     void OnFire()
@@ -205,6 +241,22 @@ public class PlayerScript : MonoBehaviour
             canSuitcaseDoubleJump = true;
             canDash = true;
             dashJumpMomentum = false;
+            if (isSlamming)
+            {
+                isSlamming = false;
+                if (slamTrail != null) slamTrail.emitting = false;
+                
+                
+                float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
+
+                rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
+                canSlam = true;
+            }
+            
+            else
+            {
+                canSlam = true;
+            }
         }
     }
 
