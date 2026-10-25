@@ -12,9 +12,22 @@ public class PlayerScript : MonoBehaviour
     public float JumpForce;
     public float SuitcaseJumpForce = 16f; // Extra high boost for jumping off the suitcase!
 
+    [Header("Dash Settings")]
+    public float DashSpeed = 20f;
+    public float DashDuration = 0.15f;
+    public TrailRenderer dashTrail;
+    private bool isDashing = false;
+    private float dashTimer = 0f;
+    private float facingDirection = 1f;
+    private bool canDash = true;
+
+    [Header ("Bounce Settings")]
+
     [Header("Suitcase Settings")]
     public Transform suitcaseTransform; // Drag your BCase object here in the inspector
     private bool canSuitcaseDoubleJump = true;
+
+
 
     void Start()
     {
@@ -23,8 +36,45 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        // Keeps your exact movement running smoothly
-        rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
+        // I'm in hell (Dashing) - Bill
+        if (direction.x > 0)
+        {
+            facingDirection = 1f;
+        }
+        else if (direction.x < 0)
+        {
+            facingDirection = -1f;
+        }
+
+        if (isDashing)
+        {
+            dashTimer -= Time.deltaTime;
+
+            if (dashTimer <= 0f)
+            {
+                isDashing = false;
+                
+                
+                if (dashTrail != null)
+                {
+                    dashTrail.emitting = false;
+                }
+            }
+        }
+        else
+        {
+            // Keeps your exact movement running smoothly (Is this ai? - Bill)
+            // moved this here because I felt like it (I had to to get dashing working lmao) - Billy <3 
+            rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        if (isDashing)
+        {
+            rb.linearVelocity = new Vector2(facingDirection * DashSpeed, 0f);
+        }
     }
 
     // Handles your controller/keyboard stick movement
@@ -47,6 +97,35 @@ public class PlayerScript : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, SuitcaseJumpForce);
             canSuitcaseDoubleJump = false;
             Debug.Log("Suitcase Double Jump Activated!");
+        }
+    }
+
+    // LEFT SHIFT DASH DASH DASH AWAY HO HO HO - Bill
+    void OnDash()
+    {
+        if (isDashing || (!onGround && !canDash))        
+        {
+            return;
+        }
+        
+        isDashing = true;
+        dashTimer = DashDuration;
+        
+        if (!onGround)
+        {
+            canDash = false;
+        }
+        
+        if (direction.x != 0)
+        {
+            facingDirection = Mathf.Sign(direction.x);
+        }
+        
+        rb.linearVelocity = new Vector2(facingDirection * DashSpeed,0f);
+        
+        if (dashTrail != null)
+        {
+            dashTrail.emitting = true;
         }
     }
 
@@ -78,7 +157,8 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             onGround = true;
-            canSuitcaseDoubleJump = true; // Resets your double jump whenever you touch down
+            canSuitcaseDoubleJump = true;
+            canDash = true;
         }
     }
 
