@@ -8,21 +8,22 @@ Game Development Official Project Idea
 
 MUST HAVE: 
 [ ] Moving Sprites and Input
-[Y] Collision and physics
-[Y] Audio
-[Y] Jumping
-[ ] Dashing
-[ ] Ground Pound Bounce
-[ ] Pause
-[ ] Close the game
-[ ] Time Limit
+[Finished] Collision and physics
+[Started] Audio (Add more audio)
+[Started] Jumping (Fix Jump Glitch)
+[Finished] Dashing (Dash with Shift)
+[Finished] Long Jump Dash Jump (Jump during a dash on the ground)
+[Started] Ground Pound Bounce (Bounce with down key, find way to keep momentum)
+
+[Finished] Pause (add more flair to make it s)the game
+[Yes] Time Limit (Register end goal)
 [ ] UI
-[Y] Item Collecting
-[ ] Side-Scrolling Camera
+[Yes] Item Collecting
+[Yes] Side-Scrolling Camera (Lock Camera at certain points)
 
 STRETCH:
 [ ] Game Menu
-[ ] Animations
-[ ] Wall Jump
+[Started] Animations
+[Started] Wall Jump 
 [ ] Saving Data
-[ ] Scoring System
+[Started] Scoring System
