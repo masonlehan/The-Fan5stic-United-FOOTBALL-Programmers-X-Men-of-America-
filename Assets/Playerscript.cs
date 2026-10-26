@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     [Header("Movement Settings")]
     public float Speed;
     public float JumpForce;
-    public float SuitcaseJumpForce = 16f; // Extra high boost for jumping off the suitcase!
+    //public float SuitcaseJumpForce = 16f; // Extra high boost for jumping off the suitcase!
 
     [Header("Dash Settings")]
     public float DashSpeed = 20f;
@@ -39,9 +39,27 @@ public class PlayerScript : MonoBehaviour
     private bool isSlamming = false;
     private bool canSlam = true;
 
+
+    [Header("Wall Slide Settings")]
+    public Transform wallCheck;
+    public float wallCheckDistance = 0.6f;
+    public LayerMask wallLayer;
+    public float wallSlideSpeed = 3f;
+    private bool isTouchingWall = false;
+    private bool isWallSliding = false;
+    private int wallDirection = 0;
+
+    [Header("Wall Jump Settings")]
+    public float WallJumpHorizontalForce = 12f;
+    public float WallJumpVerticalForce = 16f;
+    public float WallJumpControlLock = 0.2f;
+    private bool isWallJumping = false;
+    private float wallJumpTimer = 0f;
+    private int wallJumpAwayDirection = 0;
+
     [Header("Suitcase Settings")]
     public Transform suitcaseTransform; // Drag your BCase object here in the inspector
-    private bool canSuitcaseDoubleJump = true;
+    //private bool canSuitcaseDoubleJump = true;
 
 
 
@@ -54,6 +72,18 @@ public class PlayerScript : MonoBehaviour
     
     void Update()
     {
+        CheckWall();
+        
+        if (wallJumpTimer > 0f)
+        {
+            wallJumpTimer -= Time.deltaTime;
+        }
+        
+        else
+        {
+            isWallJumping = false;
+        }
+        
         if (direction.x != 0 && !dashJumpMomentum)
         {
             facingDirection = Mathf.Sign(direction.x);
@@ -98,9 +128,21 @@ public class PlayerScript : MonoBehaviour
             }
         }   
     
+        else if (isWallJumping)
+        {
+            rb.linearVelocity = new Vector2( wallJumpAwayDirection * WallJumpHorizontalForce, rb.linearVelocity.y);
+        }
+        
         else
         {
             rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
+        }
+        
+        isWallSliding = isTouchingWall && !onGround && rb.linearVelocity.y <= 0 && !isDashing && !isSlamming && !isWallJumping;
+        
+        if (isWallSliding)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -wallSlideSpeed);
         }
     }
 
@@ -128,6 +170,14 @@ public class PlayerScript : MonoBehaviour
     
     void OnJump()
     {
+        if (isWallSliding)
+        {
+            WallJump();
+            return;
+        }
+
+
+
         if (isDashing && onGround)
         {
             isDashing = false;
@@ -141,7 +191,7 @@ public class PlayerScript : MonoBehaviour
             
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
             onGround = false;
-            canSuitcaseDoubleJump = true;
+            //canSuitcaseDoubleJump = true;
             return;
         }
         if (isDashing) return;
@@ -151,12 +201,12 @@ public class PlayerScript : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
         }
         
-        else if (canSuitcaseDoubleJump)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,SuitcaseJumpForce);
-            canSuitcaseDoubleJump = false;
-            Debug.Log("Suitcase Double Jump Activated!");
-        }
+        //else if (canSuitcaseDoubleJump)
+        //{
+            //rb.linearVelocity = new Vector2(rb.linearVelocity.x,SuitcaseJumpForce);
+            //canSuitcaseDoubleJump = false;
+            //Debug.Log("Suitcase Double Jump Activated!");
+        //}
     }
 
 
@@ -210,6 +260,44 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+
+    void CheckWall()
+    {
+        RaycastHit2D hitRight = Physics2D.Raycast(transform.position, Vector2.right, wallCheckDistance, wallLayer);
+        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, Vector2.left, wallCheckDistance, wallLayer);
+        
+        if (hitRight.collider != null && direction.x > 0)
+        {
+            isTouchingWall = true;
+            wallDirection = 1;
+        }
+        
+        else if (hitLeft.collider != null && direction.x < 0)
+        {
+            isTouchingWall = true;
+            wallDirection = -1;
+        }
+        
+        else
+        {
+            isTouchingWall = false;
+            wallDirection = 0;
+        }
+    }
+
+
+    void WallJump()
+    {
+        if (!isWallSliding || isDashing || isSlamming) return;
+        
+        isWallSliding = false;
+        isWallJumping = true;
+        wallJumpTimer = WallJumpControlLock;
+        wallJumpAwayDirection = -wallDirection;
+        
+        rb.linearVelocity = new Vector2 (wallJumpAwayDirection * WallJumpHorizontalForce, WallJumpVerticalForce);
+    }
+
     // Left-click or attack button triggers this automatically in the New Input System
     void OnFire()
     {
@@ -238,7 +326,7 @@ public class PlayerScript : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             onGround = true;
-            canSuitcaseDoubleJump = true;
+            //canSuitcaseDoubleJump = true;
             canDash = true;
             dashJumpMomentum = false;
             if (isSlamming)
