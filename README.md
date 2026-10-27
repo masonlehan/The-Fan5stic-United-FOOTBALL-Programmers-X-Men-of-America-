@@ -21,9 +21,9 @@ MUST HAVE:
 [ ] UI
 [Started] Item Collecting
 [Finished] Side-Scrolling Camera
-[ ] Lock Camera
 
 STRETCH:
+[ ] Lock Camera
 [Finished] Controller Support
 [ ] Stage Select Screen
 [ ] Game Menu
