@@ -1,11 +1,13 @@
 using UnityEngine;
-using UnityEngine.InputSystem; 
+using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class PlayerScript : MonoBehaviour
 {
     Rigidbody2D rb;
     Vector2 direction;
     bool onGround;
+    private HashSet<Collider2D> groundContacts = new HashSet<Collider2D>();
 
     [Header("Movement Settings")]
     public float Speed;
@@ -321,38 +323,38 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (!collision.gameObject.CompareTag("Ground")) return;
+        
+        groundContacts.Add(collision.collider);
+        onGround = groundContacts.Count > 0;
+        canDash = true;
+        dashJumpMomentum = false;
+        
+        if (isSlamming)
         {
-            onGround = true;
-            //canSuitcaseDoubleJump = true;
-            canDash = true;
-            dashJumpMomentum = false;
-            if (isSlamming)
-            {
-                isSlamming = false;
-                if (slamTrail != null) slamTrail.emitting = false;
-                
-                
-                float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
-
-                rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
-                canSlam = true;
-            }
+            isSlamming = false;
             
-            else
-            {
-                canSlam = true;
-            }
+            if (slamTrail != null) slamTrail.emitting = false;
+
+        float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
+        rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
+        canSlam = true;
+        }
+        
+        else
+        {
+        canSlam = true;
         }
     }
 
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
-        {
-            onGround = false;
-        }
+        if (!collision.gameObject.CompareTag("Ground")) return;
+        groundContacts.Remove(collision.collider);
+        onGround = groundContacts.Count > 0;
     }
+
 }
