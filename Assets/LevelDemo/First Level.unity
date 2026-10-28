@@ -6424,7 +6424,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.6409277}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6434,7 +6434,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 2.2818553}
   m_EdgeRadius: 0
 --- !u!114 &974623790
 MonoBehaviour:
@@ -16423,11 +16423,11 @@ SceneRoots:
   - {fileID: 1716893104}
   - {fileID: 431303896}
   - {fileID: 1026061027}
-  - {fileID: 1664506681}
   - {fileID: 1305061951}
   - {fileID: 1472098531}
   - {fileID: 749624776}
   - {fileID: 1167944077}
+  - {fileID: 1664506681}
   - {fileID: 914722073}
   - {fileID: 1393308356}
   - {fileID: 753895498}
