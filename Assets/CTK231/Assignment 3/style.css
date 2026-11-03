@@ -1,0 +1,70 @@
+/* Body */
+
+body {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+/* Headings */
+
+h1 {
+  color: #ffffff;
+  background-color: #333399;
+}
+
+h2 {
+  color: #0000ff;
+  background-color: #ffffff;
+}
+
+h3 {
+  color: #333333;
+  background-color: #dddddd;
+}
+
+/* Paragraph text */
+
+p {
+  color: #000000;
+}
+
+/* Navigation */
+
+nav {
+  background-color: #cccccc;
+}
+
+/* Links */
+
+a:link {
+  color: #ff0000;
+}
+
+a:visited {
+  color: #008000;
+}
+
+a:hover {
+  color: #ffff00;
+}
+
+/* Divs */
+
+#program {
+  background-color: #ffffff;
+}
+
+#requirements {
+  background-color: #ffffff;
+}
+
+#classes {
+  background-color: #ffffff;
+}
+
+/* Span */
+
+.special {
+  color: #ff0000;
+  background-color: #ffff00;
+}

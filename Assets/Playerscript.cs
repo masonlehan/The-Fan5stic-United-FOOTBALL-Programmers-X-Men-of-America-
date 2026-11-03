@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour
     Vector2 direction;
     bool onGround;
     private HashSet<Collider2D> groundContacts = new HashSet<Collider2D>();
+    private Collider2D playerCollider;
 
     [Header("Movement Settings")]
     public float Speed;
@@ -43,10 +44,10 @@ public class PlayerScript : MonoBehaviour
 
 
     [Header("Wall Slide Settings")]
-    public Transform wallCheck;
     public float wallCheckDistance = 0.6f;
-    public LayerMask wallLayer;
+    public LayerMask groundLayer;
     public float wallSlideSpeed = 3f;
+    public float wallSlideFallThreshold = -0.5f;
     private bool isTouchingWall = false;
     private bool isWallSliding = false;
     private int wallDirection = 0;
@@ -68,6 +69,7 @@ public class PlayerScript : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>();
+       playerCollider = GetComponent<Collider2D>();
     }
 
     
@@ -140,11 +142,12 @@ public class PlayerScript : MonoBehaviour
             rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
         }
         
-        isWallSliding = isTouchingWall && !onGround && rb.linearVelocity.y <= 0 && !isDashing && !isSlamming && !isWallJumping;
+        
+        isWallSliding = isTouchingWall && !onGround && rb.linearVelocity.y < wallSlideFallThreshold && !isDashing && !isSlamming && !isWallJumping;
         
         if (isWallSliding)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -wallSlideSpeed);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, -wallSlideSpeed));
         }
     }
 
@@ -172,43 +175,31 @@ public class PlayerScript : MonoBehaviour
     
     void OnJump()
     {
-        if (isWallSliding)
+        if (isTouchingWall && !onGround && rb.linearVelocity.y < -0.1f && !isDashing && !isSlamming && !isWallJumping)
         {
             WallJump();
             return;
         }
-
-
-
+        
         if (isDashing && onGround)
         {
             isDashing = false;
             
-            if (dashTrail != null)
-            {
-                dashTrail.emitting = false;
-            }
+            if (dashTrail != null) dashTrail.emitting = false;
             
             dashJumpMomentum = true;
             
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
+            
             onGround = false;
-            //canSuitcaseDoubleJump = true;
             return;
         }
-        if (isDashing) return;
         
+        if (isDashing) return;
         if (onGround)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
         }
-        
-        //else if (canSuitcaseDoubleJump)
-        //{
-            //rb.linearVelocity = new Vector2(rb.linearVelocity.x,SuitcaseJumpForce);
-            //canSuitcaseDoubleJump = false;
-            //Debug.Log("Suitcase Double Jump Activated!");
-        //}
     }
 
 
@@ -264,22 +255,52 @@ public class PlayerScript : MonoBehaviour
 
 
     void CheckWall()
+    
     {
-        RaycastHit2D hitRight = Physics2D.Raycast(transform.position, Vector2.right, wallCheckDistance, wallLayer);
-        RaycastHit2D hitLeft = Physics2D.Raycast(transform.position, Vector2.left, wallCheckDistance, wallLayer);
+        Bounds bounds = playerCollider.bounds;
+        float rightX = bounds.max.x + 0.02f;
+        float leftX = bounds.min.x - 0.02f;
+        float[] heights =
+        {
+            bounds.min.y + bounds.size.y * 0.25f, bounds.center.y, bounds.min.y + bounds.size.y * 0.75f
+        };
         
-        if (hitRight.collider != null && direction.x > 0)
+        bool hitRight = false;
+        bool hitLeft = false;
+        
+        foreach (float y in heights)
+        {
+            RaycastHit2D rightHit = Physics2D.Raycast(new Vector2(rightX, y), Vector2.right, wallCheckDistance, groundLayer);
+            RaycastHit2D leftHit = Physics2D.Raycast(new Vector2(leftX, y), Vector2.left, wallCheckDistance, groundLayer);
+            
+            if (rightHit.collider != null && rightHit.normal.x < -0.5f)
+            {
+                hitRight = true;
+            }
+            
+            if (leftHit.collider != null && leftHit.normal.x > 0.5f)
+            {
+                hitLeft = true;
+            }
+        }
+        
+        if (hitRight && !hitLeft)
         {
             isTouchingWall = true;
             wallDirection = 1;
         }
-        
-        else if (hitLeft.collider != null && direction.x < 0)
+
+        else if (hitLeft && !hitRight)
         {
             isTouchingWall = true;
             wallDirection = -1;
         }
-        
+
+        else if (hitRight && hitLeft)
+        {
+            isTouchingWall = true;
+            wallDirection = direction.x >= 0 ? 1 : -1;
+        }
         else
         {
             isTouchingWall = false;
@@ -290,15 +311,34 @@ public class PlayerScript : MonoBehaviour
 
     void WallJump()
     {
-        if (!isWallSliding || isDashing || isSlamming) return;
+        if (!isTouchingWall || onGround || isDashing || isSlamming)
+        return;
         
         isWallSliding = false;
         isWallJumping = true;
+        
         wallJumpTimer = WallJumpControlLock;
         wallJumpAwayDirection = -wallDirection;
-        
-        rb.linearVelocity = new Vector2 (wallJumpAwayDirection * WallJumpHorizontalForce, WallJumpVerticalForce);
+
+        rb.linearVelocity = new Vector2(wallJumpAwayDirection * WallJumpHorizontalForce, WallJumpVerticalForce);
     }
+
+
+    bool HasGroundContact(Collision2D collision)
+    {
+        for (int i = 0; i < collision.contactCount; i++)
+        {
+            ContactPoint2D contact = collision.GetContact(i);
+            
+            if (contact.normal.y > 0.5f)
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
 
     // Left-click or attack button triggers this automatically in the New Input System
     void OnFire()
@@ -328,6 +368,8 @@ public class PlayerScript : MonoBehaviour
     {
         if (!collision.gameObject.CompareTag("Ground")) return;
         
+        if (!HasGroundContact(collision)) return;
+        
         groundContacts.Add(collision.collider);
         onGround = groundContacts.Count > 0;
         canDash = true;
@@ -337,24 +379,43 @@ public class PlayerScript : MonoBehaviour
         {
             isSlamming = false;
             
-            if (slamTrail != null) slamTrail.emitting = false;
-
-        float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
-        rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
-        canSlam = true;
+            if (slamTrail != null)
+            slamTrail.emitting = false;
+            
+            float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
+            
+            rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
+            canSlam = true;
         }
         
         else
         {
-        canSlam = true;
+            canSlam = true;
         }
     }
+    
 
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Ground")) return;
+        
+        if (HasGroundContact(collision))
+        {
+            groundContacts.Add(collision.collider);
+        }
+        
+        else
+        {
+            groundContacts.Remove(collision.collider);
+        }
+        
+        onGround = groundContacts.Count > 0;
+        }
+        
     void OnCollisionExit2D(Collision2D collision)
     {
         if (!collision.gameObject.CompareTag("Ground")) return;
         groundContacts.Remove(collision.collider);
         onGround = groundContacts.Count > 0;
     }
-
 }
