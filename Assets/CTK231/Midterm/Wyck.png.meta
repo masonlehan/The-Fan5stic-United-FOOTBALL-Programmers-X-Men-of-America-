@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wyck_0: 3019395424575243747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

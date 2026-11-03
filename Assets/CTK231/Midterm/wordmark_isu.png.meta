@@ -559,7 +559,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wordmark_isu_0: -8763369111591579860
+      wordmark_isu_1: -9182804755461590123
+      wordmark_isu_10: 7816224105928234132
+      wordmark_isu_11: 3411571267444365137
+      wordmark_isu_12: 1116845416020583744
+      wordmark_isu_13: 2103339856957736318
+      wordmark_isu_14: -7232432118218753746
+      wordmark_isu_15: -6555651654325935581
+      wordmark_isu_16: 6095902417748788006
+      wordmark_isu_17: 8712721989331190502
+      wordmark_isu_2: 6259548777970272528
+      wordmark_isu_3: -4824145470799980742
+      wordmark_isu_4: 2098344469644988492
+      wordmark_isu_5: 5807542956317032750
+      wordmark_isu_6: 4439715535671376144
+      wordmark_isu_7: 4356298206661737564
+      wordmark_isu_8: -5772062962733754304
+      wordmark_isu_9: 6411001519198723989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
