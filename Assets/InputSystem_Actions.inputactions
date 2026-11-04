@@ -560,7 +560,7 @@
                 {
                     "name": "",
                     "id": "41624181-7814-4b21-b694-3dfe15531255",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
