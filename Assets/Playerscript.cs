@@ -38,10 +38,10 @@ public class PlayerScript : MonoBehaviour
 
     [Header("Bounce Settings")]
     public float SlamSpeed = 25f;
-    public float BounceHeight = 22f;
-    public float SecondBounceHeight = 26f;
-    public float ThirdBounceHeight = 30f;
-    public float SlamDeceleration = 2f;
+    public float BounceHeight = 11f;
+    public float SecondBounceHeight = 12f;
+    public float ThirdBounceHeight = 13f;
+    public float SlamDeceleration = 0f;
     public TrailRenderer slamTrail;
     private bool isSlamming = false;
     private bool canSlam = true;
@@ -65,7 +65,7 @@ public class PlayerScript : MonoBehaviour
     private bool isWallJumping = false;
     private float wallJumpTimer = 0f;
     private int wallJumpAwayDirection = 0;
-    public float WallJumpBufferTime = 0.15f;
+    public float WallJumpBufferTime = 0f;
     private float wallJumpBufferCounter = 0f;
 
     [Header("Suitcase Settings")]
