@@ -36,16 +36,17 @@ public class PlayerScript : MonoBehaviour
     public float DashJumpMaxSpeed = 20f;
     
 
-    [Header ("Bounce Settings")]
+    [Header("Bounce Settings")]
     public float SlamSpeed = 25f;
     public float BounceHeight = 22f;
+    public float SecondBounceHeight = 26f;
+    public float ThirdBounceHeight = 30f;
     public float SlamDeceleration = 2f;
-    [Range(0f, 1f)]
-    public float BounceDeceleration = 0.2f;
     public TrailRenderer slamTrail;
-
     private bool isSlamming = false;
     private bool canSlam = true;
+    private int bounceCount = 0;
+    private Gradient normalDashGradient;
 
 
     [Header("Wall Slide Settings")]
@@ -77,6 +78,11 @@ public class PlayerScript : MonoBehaviour
     {
        rb = GetComponent<Rigidbody2D>();
        playerCollider = GetComponent<Collider2D>();
+
+       if (dashTrail != null)
+        {
+            normalDashGradient = dashTrail.colorGradient;
+        }
     }
 
     
@@ -143,6 +149,9 @@ public class PlayerScript : MonoBehaviour
             facingDirection = Mathf.Sign(direction.x);
         }
 
+        isWallSliding = isTouchingWall && !onGround && rb.linearVelocity.y < wallSlideFallThreshold && !isDashing && !isSlamming && !isWallJumping;
+
+
         if (isDashing)
         {
             dashTimer -= Time.deltaTime;
@@ -157,28 +166,30 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         }
+        
+        else if (isWallSliding)
+        {
+            dashJumpMomentum = false;
+
+            rb.linearVelocity = new Vector2(0f, Mathf.Max(rb.linearVelocity.y, -wallSlideSpeed));
+        }
+
         else if (isSlamming)
         {
-            float newX = Mathf.MoveTowards(rb.linearVelocity.x, 0f, SlamDeceleration * Time.deltaTime);
-            rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
+            //float newX = Mathf.MoveTowards(rb.linearVelocity.x, 0f, SlamDeceleration * Time.deltaTime);
+            //rb.linearVelocity = new Vector2(newX, rb.linearVelocity.y);
         }
         
         else if (dashJumpMomentum)
         {
             float input = direction.x;
-            if (input != 0 && Mathf.Sign(input) != Mathf.Sign(rb.linearVelocity.x))
-            {
-                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x, 0f, DashJumpDeceleration * Time.deltaTime),rb.linearVelocity.y);
-                
-                if (Mathf.Abs(rb.linearVelocity.x) < 0.1f)
-                {
-                    rb.linearVelocity = new Vector2(0f,rb.linearVelocity.y);
-                }
-            }
             
-            else if (input != 0)
+            if (input != 0)
             {
-                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x,input * DashJumpMaxSpeed, DashJumpAcceleration * Time.deltaTime), rb.linearVelocity.y);
+                float targetSpeed = input * DashJumpMaxSpeed;
+
+                float acceleration = Mathf.Sign(input) != Mathf.Sign(rb.linearVelocity.x) ? DashJumpDeceleration : DashJumpAcceleration;
+                rb.linearVelocity = new Vector2(Mathf.MoveTowards(rb.linearVelocity.x, targetSpeed, acceleration * Time.deltaTime), rb.linearVelocity.y);
             }
         }   
     
@@ -190,14 +201,6 @@ public class PlayerScript : MonoBehaviour
         else
         {
             rb.linearVelocity = new Vector2(direction.x * Speed, rb.linearVelocity.y);
-        }
-        
-        
-        isWallSliding = isTouchingWall && !onGround && rb.linearVelocity.y < wallSlideFallThreshold && !isDashing && !isSlamming && !isWallJumping;
-        
-        if (isWallSliding)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Max(rb.linearVelocity.y, -wallSlideSpeed));
         }
     }
 
@@ -311,6 +314,7 @@ public class PlayerScript : MonoBehaviour
         
         if (dashTrail != null)
         {
+            dashTrail.colorGradient = normalDashGradient;
             dashTrail.emitting = true;
         }
     }
@@ -318,23 +322,38 @@ public class PlayerScript : MonoBehaviour
     //I'M NOT MAKING A BOUNCE JOKE... DOWN KEY TO BOUNCE - Bill
     void OnBounce()
     {
-        if (onGround || isSlamming || !canSlam) return;
+        if (onGround || isSlamming || !canSlam || bounceCount >= 3)
+        return;
         isDashing = false;
+        
+        //if (dashTrail != null) dashTrail.emitting = false;
 
-        if (dashTrail != null) dashTrail.emitting = false;
-    
-        dashJumpMomentum = false;
         isSlamming = true;
         canSlam = false;
-
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x,-SlamSpeed);
-
-        if (slamTrail != null)
-        {
-            slamTrail.Clear();
-            slamTrail.emitting = true;
-        }
+        
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, -SlamSpeed);
     }
+
+
+    void SetBounceTrailColor(int bounceNumber)
+    {
+        if (dashTrail == null) return;
+
+        Color bounceColor;
+
+        if (bounceNumber == 1) bounceColor = Color.green;
+        
+        else if (bounceNumber == 2) bounceColor = Color.yellow;
+    
+        else bounceColor = Color.red;
+        
+        Gradient gradient = new Gradient();
+
+        gradient.SetKeys(new GradientColorKey[]{new GradientColorKey(bounceColor, 0f),new GradientColorKey(bounceColor, 1f)}, new GradientAlphaKey[]{new GradientAlphaKey(1f, 0f), new GradientAlphaKey(0f, 1f)});
+        
+        dashTrail.colorGradient = gradient;
+        
+        }
 
 
     void CheckWall()
@@ -455,25 +474,58 @@ public class PlayerScript : MonoBehaviour
         
         groundContacts.Add(collision.collider);
         onGround = groundContacts.Count > 0;
+
         canDash = true;
-        dashJumpMomentum = false;
-        
+
+
         if (isSlamming)
         {
             isSlamming = false;
+
+            if (slamTrail != null) slamTrail.emitting = false;
+
+            float currentBounceHeight;
+
+            if (bounceCount == 0)
+            {
+                currentBounceHeight = BounceHeight;
+            }
+
+            else if (bounceCount == 1)
+            {
+                currentBounceHeight = Mathf.Max(SecondBounceHeight, BounceHeight + 0.01f);
+            }
+
+            else
+            {
+                currentBounceHeight = Mathf.Max(ThirdBounceHeight, Mathf.Max(SecondBounceHeight, BounceHeight + 0.01f) + 0.01f);
+            }
+
+            bounceCount++;
             
-            if (slamTrail != null)
-            slamTrail.emitting = false;
+            SetBounceTrailColor(bounceCount);
+            if (dashTrail != null)
+            {
+                dashTrail.Clear();
+                dashTrail.emitting = true;
+            }
             
-            float bouncedX = rb.linearVelocity.x * (1f - BounceDeceleration);
-            
-            rb.linearVelocity = new Vector2(bouncedX, BounceHeight);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, currentBounceHeight);
             canSlam = true;
         }
-        
+            
         else
         {
             canSlam = true;
+            bounceCount = 0;
+            dashJumpMomentum = false;
+        
+            if (dashTrail != null)
+            {
+                dashTrail.emitting = false;
+                dashTrail.Clear();
+                dashTrail.colorGradient = normalDashGradient;
+            }
         }
     }
     
