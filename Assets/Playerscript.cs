@@ -13,7 +13,12 @@ public class PlayerScript : MonoBehaviour
     [Header("Movement Settings")]
     public float Speed;
     public float JumpForce;
-    //public float SuitcaseJumpForce = 16f; // Extra high boost for jumping off the suitcase!
+
+    [Header("Jump Timing Settings")]
+    public float CoyoteTime = 0.15f;
+    public float JumpBufferTime = 0.15f;
+    private float coyoteTimeCounter = 0f;
+    private float jumpBufferCounter = 0f;
 
     [Header("Dash Settings")]
     public float DashSpeed = 20f;
@@ -59,6 +64,8 @@ public class PlayerScript : MonoBehaviour
     private bool isWallJumping = false;
     private float wallJumpTimer = 0f;
     private int wallJumpAwayDirection = 0;
+    public float WallJumpBufferTime = 0.15f;
+    private float wallJumpBufferCounter = 0f;
 
     [Header("Suitcase Settings")]
     public Transform suitcaseTransform; // Drag your BCase object here in the inspector
@@ -77,6 +84,49 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         CheckWall();
+
+        if (wallJumpBufferCounter > 0f)
+        {
+            wallJumpBufferCounter -= Time.deltaTime;
+            if (isTouchingWall && !onGround && !isDashing && !isSlamming && !isWallJumping)
+            {
+                WallJump();
+                wallJumpBufferCounter = 0f;
+            }
+        }
+        
+        if (onGround && rb.linearVelocity.y <= 0.01f)
+        {
+            coyoteTimeCounter = CoyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+        
+        if (jumpBufferCounter > 0f)
+        {
+            if (onGround && !isDashing && !isSlamming)
+            {
+                PerformGroundJump();
+            }
+            
+            else if (!onGround && coyoteTimeCounter > 0f && !isSlamming)
+            {
+                if (isDashing)
+                {
+                    isDashing = false;
+                    
+                    if (dashTrail != null) dashTrail.emitting = false;
+                    dashJumpMomentum = true;
+                }
+                PerformGroundJump();
+            }
+            else
+            {
+                jumpBufferCounter -= Time.deltaTime;
+            }
+        }
         
         if (wallJumpTimer > 0f)
         {
@@ -175,9 +225,16 @@ public class PlayerScript : MonoBehaviour
     
     void OnJump()
     {
+        // WALL JUMP BUFFER
+        if (!isTouchingWall || onGround)
+        {
+            wallJumpBufferCounter = WallJumpBufferTime;
+        }
+
         if (isTouchingWall && !onGround && rb.linearVelocity.y < -0.1f && !isDashing && !isSlamming && !isWallJumping)
         {
             WallJump();
+            jumpBufferCounter = 0f;
             return;
         }
         
@@ -186,21 +243,47 @@ public class PlayerScript : MonoBehaviour
             isDashing = false;
             
             if (dashTrail != null) dashTrail.emitting = false;
-            
             dashJumpMomentum = true;
-            
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
             
             onGround = false;
+            coyoteTimeCounter = 0f;
+            jumpBufferCounter = 0f;
             return;
         }
         
-        if (isDashing) return;
-        if (onGround)
+        if (isSlamming) return;
+
+        if (isDashing && !onGround && coyoteTimeCounter > 0f)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,JumpForce);
+            isDashing = false;
+            if (dashTrail != null) dashTrail.emitting = false;
+            
+            dashJumpMomentum = true;
+            PerformGroundJump();
+            return;
+        }
+        
+        if (!isDashing && (onGround || coyoteTimeCounter > 0f))
+        {
+            PerformGroundJump();
+        }
+        
+        else if (!isDashing)
+        {
+            jumpBufferCounter = JumpBufferTime;
         }
     }
+
+    void PerformGroundJump()
+    {
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, JumpForce);
+        onGround = false;
+
+        coyoteTimeCounter = 0f;
+        jumpBufferCounter = 0f;
+    }
+
 
 
     // LEFT SHIFT DASH DASH DASH AWAY HO HO HO - Bill
