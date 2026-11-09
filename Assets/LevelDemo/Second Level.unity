@@ -38042,6 +38042,95 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1801394846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 123437653216054747, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240010298139967757, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_Name
+      value: PauseManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2240010298139967757, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6300851291044742609, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_text
+      value: Loser
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6629298209694864749, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7207827486560462682, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_text
+      value: Noodle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248486776494762003, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362885905593211414, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362885905593211414, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7561965
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362885905593211414, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8eaa3a64a1d5f4e9594199785bc0103b, type: 3}
 --- !u!1 &1805715625
 GameObject:
   m_ObjectHideFlags: 0
@@ -45287,6 +45376,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 244333701}
   - {fileID: 1206908915}
+  - {fileID: 1801394846}
   - {fileID: 1297165054}
   - {fileID: 1668959518}
   - {fileID: 737736797}
