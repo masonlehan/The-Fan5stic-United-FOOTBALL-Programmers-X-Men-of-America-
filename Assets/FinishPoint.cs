@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class FinishPoint : MonoBehaviour
 {
-    private void OnTriggerEnter2D (Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            // go to next level
+            Debug.Log("Player reached finish point!");
+
             SceneController.instance.NextLevel();
         }
     }

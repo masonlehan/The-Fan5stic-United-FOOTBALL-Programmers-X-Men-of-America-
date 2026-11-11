@@ -579,6 +579,10 @@ PrefabInstance:
       propertyPath: SecondBounceHeight
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 2789968507367206852, guid: 2d73da04a893961448cbc408fe2f1c2b, type: 3}
+      propertyPath: WallJumpBufferTime
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3614698783622229425, guid: 2d73da04a893961448cbc408fe2f1c2b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
