@@ -48,3 +48,6 @@ I think what worked out a lot was how we did the workflow between the group. We 
 
 What could be improved? (In between 20 to 200 words, explain what could be improved. This may include communication, mechanics, or processes.)
 GitHub was really the only main issue in our group because of some stupid file corrupts, files not saving over, not everyone getting the new updates. it was just a whole mess and that's all that needs to be said is that GitHub was only problem. 
+
+Project 2 Groups
+Mason, Shane, Davian, Bill
