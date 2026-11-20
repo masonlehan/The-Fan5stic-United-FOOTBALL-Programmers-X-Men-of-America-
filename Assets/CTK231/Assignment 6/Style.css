@@ -1,0 +1,137 @@
+/* Assignment 6 */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("a62.png");
+    background-repeat: repeat;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#page {
+    width: 94%;
+    max-width: 1205px;
+    margin: 17px auto;
+    background-color: white;
+    border: 2px solid black;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0 0 16px 0;
+    padding: 24px 18px;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 268px 1fr;
+    column-gap: 16px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 16px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 16px;
+    background-color: #ff0000;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #990000;
+}
+
+main h2 {
+    margin: 0 0 20px 0;
+    padding: 0 0 8px 0;
+    border-bottom: 3px solid black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    line-height: 1;
+}
+
+#top-content {
+    display: grid;
+    grid-template-columns: 468px 1fr;
+    gap: 16px;
+}
+
+#photo {
+    border: 3px solid black;
+    padding: 10px;
+}
+
+#photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#intro p,
+#body-copy p {
+    margin: 0 0 16px 0;
+    text-align: justify;
+    line-height: 1.05;
+}
+
+#intro p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#body-copy p {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+p a,
+p a:visited {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    margin: 0 -2px -2px -2px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+footer p {
+    margin: 0;
+    padding: 13px 10px;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    font-size: 14px;
+}
