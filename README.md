@@ -21,6 +21,11 @@ MUST HAVE:
 [ ] UI
 [Started] Item Collecting
 [Finished] Side-Scrolling Camera
+Times up screen (Finished)
+Music (Started)
+Character Sprite (Started)
+Consistent resolution 
+
 
 STRETCH:
 [ ] Lock Camera
@@ -29,7 +34,6 @@ STRETCH:
 [ ] Game Menu
 [Started] Animations
 [Finished] Wall Jump 
-[ ] Saving Data
 [Started] Scoring/Ranking System
 
 
