@@ -51,7 +51,7 @@ What worked well? (In between 20 to 200 words, explain what worked well within t
 I think what worked out a lot was how we did the workflow between the group. We all contributed and talked about what we wanted to do in the group, and everything worked out well. We did have some confusion along the way, but we figured it out. The transition between the levels worked out well in our game and making the character and putting that into the game went pretty well. 
 
 What could be improved? (In between 20 to 200 words, explain what could be improved. This may include communication, mechanics, or processes.)
-GitHub was really the only main issue in our group because of some stupid file corrupts, files not saving over, not everyone getting the new updates. it was just a whole mess and that's all that needs to be said is that GitHub was only problem. 
+GitHub was really the only main issue in our group because of some stupid file corrupts, files not saving over, not everyone getting the new updates. it was just a whole mess and that's all that needs to be said is that GitHub was the main problem. I also think we should meet up more to discuss the project.
 
 Project 2 Groups
 Mason, Shane, Davian, Bill
